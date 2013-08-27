@@ -1,0 +1,25 @@
+#!/usr/local/bin/bash
+function gcam
+{
+    read -e -p "Commit Message:" -i "$1" message
+
+    git commit -a -m "$message"
+    bold=$(tput bold)
+    normal=$(tput sgr0)
+    echo ""
+    echo "    commited with \"$bold$message$normal\""
+    echo ""
+}
+clear
+
+
+Echo "ON: `git rev-parse --abbrev-ref HEAD`"
+git diff HEAD
+while true; do
+    read -p "Diff looks good? y/n > " yn
+    case $yn in
+        [Yy]* ) gcam "$1"; break;;
+        [NnqQ]* ) exit;;
+        * ) echo "Please answer y/n";;
+    esac
+done

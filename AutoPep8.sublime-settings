@@ -1,0 +1,6 @@
+{
+    "format_on_save":true,
+    "syntax_list": ["Python"],
+    "ignore": "E265,E266,E402,E501,E731,W503,E309",
+
+}

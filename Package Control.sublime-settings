@@ -1,0 +1,53 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+		"CoffeeScript",
+		"Find Function Definition",
+		"PythonTidy",
+		"SublimeRope"
+	],
+	"installed_packages":
+	[
+		"Advanced CSV",
+		"Anaconda",
+		"Babel",
+		"Better CoffeeScript",
+		"BracketHighlighter",
+		"Case Conversion",
+		"Clang Format",
+		"CoffeeScript",
+		"ES6-Toolkit",
+		"Find Function Definition",
+		"GitCommitMsg",
+		"GitGutter",
+		"GoSublime",
+		"HTMLBeautify",
+		"Indent XML",
+		"Inline Python",
+		"JavaScriptNext - ES6 Syntax",
+		"Jinja2",
+		"JsFormat",
+		"JsPrettier",
+		"Mako",
+		"Package Control",
+		"Pretty JSON",
+		"PyCover",
+		"Python 3",
+		"Python Breakpoints",
+		"Python PEP8 Autoformat",
+		"Python Pretty Print",
+		"PythonTidy",
+		"React ES6 Snippets",
+		"rsub",
+		"SCSS",
+		"StringEncode",
+		"StringUtilities",
+		"SublimeCodeIntel",
+		"sublimelint",
+		"SublimeLinter-coffee",
+		"SublimeLinter-pyflakes",
+		"SublimeLinter-pylint",
+		"SublimeRope"
+	]
+}

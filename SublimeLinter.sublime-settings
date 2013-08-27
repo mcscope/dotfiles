@@ -1,0 +1,65 @@
+{
+    "user": {
+        "@disable": true,
+        "debug": false,
+        "delay": 0.25,
+        "error_color": "D02000",
+        "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
+        "gutter_theme_excludes": [],
+        "lint_mode": "background",
+        "linters": {
+            "coffee": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
+            },
+            "pyflakes": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
+            },
+            "pylint": {
+                "@disable": false,
+                "args": [],
+                "disable": "C0103,C0111,C0112,C0301,W0212,C0236,E501,R0901,R0904,W0141, E0611, W0403,F0401",
+                "enable": "",
+                "excludes": [
+                    "*/ff.py"
+                ],
+                "paths": [
+                    "/Users/Christopher/Code/Hipmunk/hipmunk/",
+                    "/Users/Christopher/Code/Hipmunk/",
+                    "/Users/Christopher/Code/hipmanage/"
+                ],
+                "rcfile": "",
+                "show-codes": true
+            }
+        },
+        "mark_style": "outline",
+        "no_column_highlights_line": true,
+        "passive_warnings": false,
+        "paths": {
+            "linux": [],
+            "osx": [],
+            "windows": []
+        },
+        "python_paths": {
+            "linux": [],
+            "osx": [],
+            "windows": []
+        },
+        "rc_search_limit": 3,
+        "shell_timeout": 10,
+        "show_errors_on_save": false,
+        "show_marks_in_minimap": true,
+        "syntax_map": {
+            "html (django)": "html",
+            "html (rails)": "html",
+            "html 5": "html",
+            "php": "html",
+            "python django": "python"
+        },
+        "warning_color": "DDB700",
+        "wrap_find": true
+    }
+}

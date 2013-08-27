@@ -1,0 +1,9 @@
+{
+	"csv_per_file_setting":
+	[
+		{
+			"file": "/Users/Christopher/tmp.csv",
+			"use_header": true
+		}
+	]
+}

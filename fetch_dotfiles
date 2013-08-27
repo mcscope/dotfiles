@@ -1,0 +1,7 @@
+
+cp ~/.bash_profile .
+cp ~/.slate.js .
+rm -R bin
+cp -R ~/bin .
+cp ~/.vimrc .
+cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/*.sublime* .

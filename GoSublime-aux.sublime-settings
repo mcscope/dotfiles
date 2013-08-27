@@ -1,0 +1,11 @@
+{
+	"9o.hist./Users/Christopher/Code/blogatog":
+	[
+		"go build",
+		"go run",
+		"go run blogatog.go"
+	],
+	"ann": "a17.03.05-1",
+	"install_version": "r17.03.05-1",
+	"version": "r17.03.05-1"
+}

@@ -1,0 +1,30 @@
+[
+    { "keys": ["shift+super+up"], "command": "swap_line_up" },
+    { "keys": ["shift+super+down"], "command": "swap_line_down"},
+    { "keys": ["shift+super+d"], "command": "duplicate_line" },
+    { "keys": ["shift+super+k"], "command":  "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"}},
+    { "keys": ["ctrl+d"], "command":  "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"}},
+    { "keys": ["shift+super+x"], "command":  "cut"},
+    { "keys": ["ctrl+tab"], "command": "next_view" },
+    { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+    { "keys": ["ctrl+b"], "command": "go_to_function" },
+    { "keys": ["super+backquote"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+    { "keys": ["super+\\"], "command": "pep8_autoformat" },
+    { "keys": ["ctrl+\\"], "command": "toggle_breakpoint" },
+    { "keys": ["ctrl+super+shift+d"], "command": "find_all_under" },
+    { "keys": ["super+alt+up"], "command": "goto_python_definition"},
+
+    {
+        "keys": ["enter"],
+        "command": "find_in_files_goto",
+        "context": [{
+            "key": "selector",
+            "operator": "equal",
+            "operand": "text.find-in-files"
+        }]
+    },
+    { "keys": ["super+[" ], "command": "focus_neighboring_group", "args": {"forward": false} },
+    { "keys": ["super+]"], "command": "focus_neighboring_group" },
+
+
+]

@@ -1,0 +1,8 @@
+{
+    // autoformat code on save ?
+    "autoformat_on_save":true,
+
+
+    // do not fix these errors / warnings (e.g. [ "E501" , "E4" , "W"])
+    "ignore": ["E265", "E266", "E402", "E501", "E731", "W503", "E309", ],
+}
