@@ -1,0 +1,10 @@
+syntax on
+filetype indent plugin on
+set modeline
+set background=dark
+
+colorscheme desert
+inoremap jk <ESC>
+let mapleader = " "
+set number
+set mouse=a
