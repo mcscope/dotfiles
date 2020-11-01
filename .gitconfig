@@ -1,0 +1,55 @@
+[user]
+	name = Lady Red
+	email = mcscope@gmail.com
+[alias]
+    co = checkout
+    lg = log --pretty=format:"%Cred%h%Creset\\ %C(bold\\ blue)%aN%Creset\\ -\\ %s\\ %Cgreen(%cr)\\ %C(yellow)%d%Creset" --graph --abbrev-commit
+
+    ## from http://durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/
+    # logs
+    ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%aN]" --decorate
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%aN]" --decorate --numstat
+    lnc = log --pretty=format:"%h\\ %s\\ [%aN]"
+    lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%aN]" --decorate --date=short
+    ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%aN]" --decorate --date=relative
+    le = log --oneline --decorate
+    # the history of one file
+    filelog = log -u
+    fl = log -u
+    # summary of the last commit
+    dl = "!git ll -1"
+    # diff of the last commit
+    dlc = diff --cached HEAD^
+    # show the contents of a single commit
+    diffr  = "!f() { git diff "$1"^.."$1"; }; f"
+    dr    = "!f() { git diff "$1"^.."$1"; }; f"
+    # summary of of a single commit
+    lc = "!f() { git ll "$1"^.."$1"; }; f"
+    f = "!git ls-files | grep -i"
+    grep = grep -Ii
+    gr  = grep -Ii
+    gra = "!f() { A=$(pwd) && TOPLEVEL=$(git rev-parse --show-toplevel) && cd $TOPLEVEL && git grep --full-name -In $1 | xargs -I{} echo $TOPLEVEL/{} && cd $A; }; f"
+    # list aliases
+    la = "!git config -l | grep alias | cut -c 7-"
+	switch = !legit switch \"$@\"
+	branches = !legit branches
+	sprout = !legit sprout \"$@\"
+	unpublish = !legit unpublish \"$@\"
+	harvest = !legit harvest \"$@\"
+	sync = !legit sync \"$@\"
+	publish = !legit publish \"$@\"
+	graft = !legit graft \"$@\"
+[push]
+	default = simple
+[gyp]
+	remote = upstream
+	username = mcscope
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[color]
+	ui = true
+[rerere]
+	enabled = true
+[core]
+	editor = sublime -n -w
