@@ -1,1 +1,0 @@
-/Users/Christopher/Code/hipmanage/git.py
